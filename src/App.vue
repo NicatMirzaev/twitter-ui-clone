@@ -1,15 +1,17 @@
 <template>
   <div class="container">
     <Sidebar/>
+    <Feed/>
   </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar';
+import Feed from './components/Feed';
 
 export default {
   name: 'App',
-  components: { Sidebar }
+  components: { Sidebar, Feed }
 }
 </script>
 

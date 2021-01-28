@@ -72,13 +72,12 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0.3;
+  flex: 0.2;
   height: 95vh;
   padding: 20px;
 }
 .sidebar-option {
   display: flex;
-  width: 50%;
   align-items: center;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -93,7 +92,8 @@ export default {
 .twitter-icon {
   margin-bottom: 15px;
   cursor: pointer;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   fill: #1DA1F2;
 }
 .home-icon {
