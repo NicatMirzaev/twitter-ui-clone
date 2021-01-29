@@ -20,6 +20,11 @@
         </div>
       </div>
     </div>
+    <div class="posts">
+      <Post/>
+      <Post/>
+      <Post/>
+    </div>
   </div>
 </template>
 
@@ -31,10 +36,11 @@ import PollIcon from '../icons/Poll.vue';
 import EmojiIcon from '../icons/Emoji.vue';
 import ScheduleIcon from '../icons/Schedule.vue';
 import Profile from './Profile.vue';
+import Post from './Post.vue';
 
 export default {
   name: 'Feed',
-  components: { StarIcon, MediaIcon, GifIcon, PollIcon, EmojiIcon, ScheduleIcon, Profile }
+  components: { StarIcon, MediaIcon, GifIcon, PollIcon, EmojiIcon, ScheduleIcon, Profile, Post}
 }
 </script>
 
@@ -87,6 +93,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 38vw;
 }
 .input {
   font-size: 19px;
@@ -116,5 +123,9 @@ export default {
   border: none;
   outline: none;
   border-width: 0px;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
 }
 </style>

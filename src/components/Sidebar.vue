@@ -39,8 +39,8 @@
     <div class="profile">
       <Profile style="margin-right:10px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
       <div class="user_info">
-        <span class="name">Nicat Mirzoev</span>
-        <span class="username">@nicat.mirzoev</span>
+        <span class="name">Ferhat</span>
+        <span class="username">@ferhat.20</span>
       </div>
       <MoreIcon2 width="24" height="24"/>
     </div>
