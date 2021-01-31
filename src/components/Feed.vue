@@ -24,6 +24,9 @@
       <Post/>
       <Post/>
       <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   </div>
 </template>
@@ -49,7 +52,16 @@ export default {
   flex: 0.5;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  min-width: 760px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
 .icon {
   fill: #1DA1F2;
   cursor: pointer;

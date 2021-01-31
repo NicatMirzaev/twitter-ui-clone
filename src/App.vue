@@ -2,16 +2,18 @@
   <div class="container">
     <Sidebar/>
     <Feed/>
+    <Widgets/>
   </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar';
 import Feed from './components/Feed';
+import Widgets from './components/Widgets.vue';
 
 export default {
   name: 'App',
-  components: { Sidebar, Feed }
+  components: { Sidebar, Feed, Widgets }
 }
 </script>
 
@@ -21,11 +23,6 @@ export default {
   padding: 0;
   border: 0;
   font: inherit;
-
-  *,
-  *:before, *: after {
-    box-sizing: inherit;
-  }
 }
 
 html {
@@ -40,7 +37,7 @@ body {
 
 .container {
   display: flex;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
 }
