@@ -61,6 +61,10 @@ export default {
   border-right: 1px solid #EBEEF0;
   border-bottom: 1px solid #EBEEF0;
   border-left: 1px solid #EBEEF0;
+  cursor: pointer;
+}
+.post:hover {
+  background-color: #F7F9FA;
 }
 .post-content {
   display: flex;
