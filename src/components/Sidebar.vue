@@ -34,7 +34,12 @@
         <MoreIcon class="icon" width="28" height="28"/>
         <span class="text">More</span>
       </div>
-      <button class="button">Tweet</button>
+      <div class="button">
+        <span class="button-text">
+          Tweet
+        </span>
+        <TweetIcon class="tweet-icon" width="24" height="24"/>
+      </div>
     </div>
     <div class="profile">
       <Profile style="margin-right:10px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
@@ -42,7 +47,7 @@
         <span class="name">Nicat Mirzaev</span>
         <span class="username">@nicat.mirzaev</span>
       </div>
-      <MoreIcon2 width="24" height="24"/>
+      <MoreIcon2 class="more-icon" width="24" height="24"/>
     </div>
   </div>
 </template>
@@ -59,20 +64,23 @@ import ProfileIcon from '../icons/Profile.vue';
 import MoreIcon from '../icons/More.vue';
 import Profile from './Profile.vue';
 import MoreIcon2 from '../icons/More2.vue';
-
+import TweetIcon from '../icons/Tweet.vue';
 export default {
   name: 'Sidebar',
-  components: { TwitterIcon, HomeIcon, ExploreIcon, NotificationsIcon, MessageIcon, BookmarkIcon, ListIcon, ProfileIcon, MoreIcon, Profile, MoreIcon2 }
+  components: { TwitterIcon, HomeIcon, ExploreIcon, NotificationsIcon, MessageIcon, BookmarkIcon, ListIcon, ProfileIcon, MoreIcon, Profile, MoreIcon2, TweetIcon}
 }
 
 </script>
 
 <style scoped>
+.tweet-icon {
+  display: none;
+}
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0.2;
+  flex: 0.1;
   height: 95vh;
   padding: 20px;
 }
@@ -131,19 +139,22 @@ export default {
   outline: none;
   border-width: 0px;
 }
-.button {
+.button-text {
   font-size: 15px;
   font-weight: 700;
   color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: #1DA1F2;
   width: 230px;
   border-radius: 9999px;
   border-width: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin-top: 15px;
 }
 .profile:hover {
@@ -175,5 +186,35 @@ export default {
   display: flex;
   flex-direction: column;
   margin-right: 100px;
+}
+@media screen and (max-width: 1185px) {
+  .text {
+    display: none;
+  }
+  .sidebar {
+    max-width: 50px;
+  }
+  .button {
+    width: 50px;
+  }
+  .button-text {
+    display: none;
+  }
+  .tweet-icon {
+    display: inline-block;
+    fill: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .profile {
+    width: 50px;
+    margin: 0;
+  }
+  .user_info {
+    display: none;
+  }
+  .more-icon {
+    display: none;
+  }
 }
 </style>

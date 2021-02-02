@@ -1,29 +1,29 @@
 <template>
   <div class="post">
-    <Profile style="margin-right:10px;cursor:pointer;" src="https://static.thenounproject.com/png/630740-200.png" width="50" height="50"/>
+    <Profile style="margin-right:10px;cursor:pointer;" :src="img" width="50" height="50"/>
     <div class="post-content">
       <div class="post-header">
         <div>
-          <span class="fullname">Nicat Mirzoev</span>
-          <span class="username">@nicat.mirzoev</span>
+          <span class="fullname">{{ fullName }}</span>
+          <span class="username">{{ username }}</span>
           <span style="margin-left:5px;margin-right:5px;">·</span>
-          <span class="username">Jan 25</span>
+          <span class="username">{{ publishedAt }}</span>
         </div>
         <MoreIcon2 style="cursor:pointer;" width="24" height="24"/>
       </div>
-      <span class="content-text">"gençlerin hayatındaki kaygıların/endişelerin yarısı belirsiz ilişkilerden kaynaklanıyor" -- ilişkilerimizde net değiliz. çevremizdeki insanlara onlardan beklentimizi ifade edemiyoruz. faydası olmayan insanlarla fazla alakadarız ve bu hayatı lüzumsuz yere zorlaştırıyor.</span>
+      <span class="content-text">{{ content }}</span>
       <div class="post-footer">
         <div style="display:flex;">
           <CommentIcon class="icon" width="19" height="19"/>
-          <span class="text">20</span>
+          <span class="text">{{ comments }}</span>
         </div>
         <div style="display:flex;">
           <RetweetIcon class="icon" width="19" height="19"/>
-          <span class="text">126</span>
+          <span class="text">{{ retweets }}</span>
         </div>
         <div style="display:flex;">
           <LikeIcon class="icon" width="19" height="19"/>
-          <span class="text">1.7k</span>
+          <span class="text">{{ likes }}</span>
         </div>
         <SendIcon class="icon" width="19" height="19"/>
       </div>
@@ -69,6 +69,7 @@ export default {
 .post-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .icon {
   fill: rgb(91, 112, 131);
@@ -83,7 +84,8 @@ export default {
 .post-header {
   display: flex;
   justify-content: space-between;
-  width: 40vw;
+  width: 100%;
+  flex-shrink: 1;
 }
 .post-footer {
   display: flex;

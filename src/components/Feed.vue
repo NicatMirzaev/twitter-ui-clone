@@ -21,12 +21,14 @@
       </div>
     </div>
     <div class="posts">
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
     </div>
   </div>
 </template>
@@ -49,12 +51,11 @@ export default {
 
 <style scoped>
 .feed {
-  flex: 0.5;
+  flex: 0.6;
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
-  min-width: 760px;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -90,6 +91,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .home-text {
   font-size: 19px;
@@ -105,7 +107,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 38vw;
+  width: 98%;
 }
 .input {
   font-size: 19px;
@@ -139,5 +141,15 @@ export default {
 .posts {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1180px) {
+  .feed {
+    flex: 0.6;
+  }
+}
+@media screen and (max-width: 895px) {
+  .feed {
+    flex: 0.9;
+  }
 }
 </style>

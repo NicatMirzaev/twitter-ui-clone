@@ -67,6 +67,7 @@ export default {
   flex: 0.3;
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
 }
 .icon {
   fill: rgb(91, 112, 131);
@@ -220,5 +221,10 @@ export default {
   border: none;
   outline: none;
   border-width: 0px;
+}
+@media screen and (max-width: 895px) {
+  .widgets {
+    display: none;
+  }
 }
 </style>
