@@ -22,7 +22,7 @@
     <div class="follow">
       <span style="margin-bottom: 10px; margin-top: 5px;" class="trends-for-you">Who to follow</span>
       <div class="follow-card">
-        <Profile style="margin-right:20px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
+        <Profile style="margin-right:20px;" src="http://www.gstatic.com/tv/thumb/persons/487130/487130_v9_bb.jpg" width="40" height="40"/>
         <div class="names">
           <span class="fullname">Elon Musk</span>
           <span class="username">@elon.musk</span>
@@ -30,18 +30,18 @@
         <button class="follow-button">Follow</button>
       </div>
       <div class="follow-card">
-        <Profile style="margin-right:20px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
+        <Profile style="margin-right:20px;" src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X.jpg" width="40" height="40"/>
         <div class="names">
-          <span class="fullname">Elon Musk</span>
-          <span class="username">@elon.musk</span>
+          <span class="fullname">Bill Gates</span>
+          <span class="username">@bill.gates</span>
         </div>
         <button class="follow-button">Follow</button>
       </div>
       <div class="follow-card">
-        <Profile style="margin-right:20px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
+        <Profile style="margin-right:20px;" src="http://www.gstatic.com/tv/thumb/persons/589228/589228_v9_ba.jpg" width="40" height="40"/>
         <div class="names">
-          <span class="fullname">Elon Musk</span>
-          <span class="username">@elon.musk</span>
+          <span class="fullname">Mark Zuckerburg</span>
+          <span class="username">@mark.zuckerburg</span>
         </div>
         <button class="follow-button">Follow</button>
       </div>

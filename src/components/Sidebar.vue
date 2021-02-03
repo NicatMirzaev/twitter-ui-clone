@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="profile">
-      <Profile style="margin-right:10px;" src="https://static.thenounproject.com/png/630740-200.png" width="40" height="40"/>
+      <Profile style="margin-right:10px;" src="https://avatars.githubusercontent.com/u/69142696?s=460&u=b9ac388d4a065d8a43189371854639db425b418c&v=4" width="40" height="40"/>
       <div class="user_info">
         <span class="name">Nicat Mirzaev</span>
         <span class="username">@nicat.mirzaev</span>

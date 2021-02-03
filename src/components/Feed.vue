@@ -5,7 +5,7 @@
       <StarIcon class="icon" width="24" height="24"/>
     </div>
     <div class="feed-tweet">
-      <Profile style="margin-right:10px;cursor:pointer;" src="https://static.thenounproject.com/png/630740-200.png" width="50" height="50"/>
+      <Profile style="margin-right:10px;cursor:pointer;" src="https://avatars.githubusercontent.com/u/69142696?s=460&u=b9ac388d4a065d8a43189371854639db425b418c&v=4" width="50" height="50"/>
       <div class="feed-tweet2">
         <input class="input" placeholder="What's happening?"/>
         <div class="feed-tweet-footer">
@@ -21,14 +21,9 @@
       </div>
     </div>
     <div class="posts">
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
-      <Post img="https://static.thenounproject.com/png/630740-200.png" fullName="Nicat Mirzaev" username="@nicat.mirzaev" publishedAt="Feb 10" content="Hello World!" comments="10" retweets="5" likes="8"/>
+      <div style="width:100%;" v-for="post in posts" :key="post">
+        <Post :img="post.img" :fullName="post.fullName" :username = "post.username" :publishedAt = "post.publishedAt" :content="post.content" :comments="post.comments" :retweets="post.retweets" :likes="post.likes"></Post>
+      </div>
     </div>
   </div>
 </template>
@@ -45,7 +40,23 @@ import Post from './Post.vue';
 
 export default {
   name: 'Feed',
-  components: { StarIcon, MediaIcon, GifIcon, PollIcon, EmojiIcon, ScheduleIcon, Profile, Post}
+  components: { StarIcon, MediaIcon, GifIcon, PollIcon, EmojiIcon, ScheduleIcon, Profile, Post},
+  data () {
+    return {
+      posts: [
+        {
+          img: "https://avatars.githubusercontent.com/u/69142696?s=460&u=b9ac388d4a065d8a43189371854639db425b418c&v=4",
+          fullName: "Nicat Mirzaev",
+          username: "@nicat.mirzaev",
+          publishedAt: "Feb 3",
+          content: "Hello, world!",
+          comments: 10,
+          retweets: 5,
+          likes: 8
+        }
+      ]
+    }
+  }
 }
 </script>
 

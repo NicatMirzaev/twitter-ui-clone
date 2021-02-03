@@ -85,7 +85,7 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-shrink: 1;
+  flex-shrink: 1
 }
 .post-footer {
   display: flex;
